@@ -322,9 +322,9 @@ sub init_synclient{
   my $natural_scroll = $_[0];
   if($natural_scroll == 1){
     $conf_file_name = $n_scroll_conf_file_name;
-    `synclient VertScrollDelta=-$vert_scroll_delta HorizScrollDelta=-$horiz_scroll_delta ClickFinger3=1 TapButton3=2`;
+    `synclient VertScrollDelta=-$vert_scroll_delta HorizScrollDelta=-$horiz_scroll_delta ClickFinger3=1 TapButton3=0`;
   }else{
-    `synclient VertScrollDelta=$vert_scroll_delta HorizScrollDelta=$horiz_scroll_delta ClickFinger3=1 TapButton3=2`;
+    `synclient VertScrollDelta=$vert_scroll_delta HorizScrollDelta=$horiz_scroll_delta ClickFinger3=1 TapButton3=0`;
   }
 }
 
